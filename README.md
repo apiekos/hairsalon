@@ -1,6 +1,6 @@
 # Hair Salon Website ✂️
 
-A responsive **HTML & CSS website template** designed for a hair salon.  
+A responsive **HTML &  Tailwind CSS website template** designed for a hair salon.  
 This project is part of my portfolio and can be used as a starting point for similar websites.
 
 ---
@@ -22,7 +22,7 @@ Check the live version here:
 
 ## 🛠️ Built With
 - **HTML5**
-- **CSS3 (Flexbox & Grid)**
+- **CSS3 Tailwind CSS**
 - **Google Fonts**
 
 ---
