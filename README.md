@@ -35,8 +35,3 @@ as long as you **keep the footer credit with the author’s name visible** on th
 Full license text: [LICENSE](./LICENSE)
 
 ---
-
-## 👤 Author
-Designed & developed by **[Your Name / Nickname]**  
-📧 Contact: [your-email@example.com]  
-🌐 GitHub: [https://github.com/your-username](https://github.com/your-username)
