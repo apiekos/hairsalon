@@ -22,7 +22,7 @@ Check the live version here:
 
 ## 🛠️ Built With
 - **HTML5**
-- **CSS3 Tailwind CSS**
+- **Tailwind CSS**
 - **Google Fonts**
 
 ---
