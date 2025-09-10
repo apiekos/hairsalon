@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hair Salon – Salon fryzjerski damsko‑męski</title>
+  <meta name="description" content="HairSalon – uniwersalny szablon strony salonu fryzjerskiego. Strzyżenia, koloryzacje, stylizacje, pielęgnacja, solarium.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    @media (prefers-reduced-motion: reduce){ html { scroll-behavior: auto; } }
+    .glass { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+  </style>
+</head>
+<body class="bg-white text-slate-800 selection:bg-cyan-200">
+
+  <!-- NAV -->
+  <header id="nav" class="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+    <div class="px-6 py-4 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-3">
+        <!-- LOGO: podmień src poniżej -->
+        <img src="assets/logo.png" alt="[Nazwa Salonu] – logo" width="32" height="32" class="h-8 w-8 object-contain" />
+        <span class="text-lg font-bold tracking-tight">
+          <span class="text-slate-900">Hair</span> <span class="text-cyan-600">Salon</span>
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#onas" class="hover:text-cyan-700">O nas</a>
+        <a href="#oferta" class="hover:text-cyan-700">Oferta</a>
+        <a href="#galeria" class="hover:text-cyan-700">Galeria</a>
+        <a href="#kontakt" class="hover:text-cyan-700">Kontakt</a>
+      </nav>
+
+      <a href="#kontakt" class="rounded-lg bg-cyan-600 px-4 py-2 text-white font-medium hover:bg-cyan-500 transition">
+        Zadzwoń / Umów
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="relative h-screen flex items-center justify-center text-center px-6">
+    <!-- Tło: podmień obraz na własny -->
+    <img src="https://picsum.photos/1600/900?blur=1" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+    <div class="absolute inset-0 -z-10 bg-black/40 backdrop-blur-sm"></div>
+
+    <h1 class="sr-only">HairSalon – salon fryzjerski damsko‑męski</h1>
+
+    <div class="max-w-3xl text-white">
+      <!-- DUŻE LOGO -->
+      <img src="assets/logo.png" alt="[Nazwa Salonu] – logo" width="512" height="512" class="mx-auto mb-6 h-40 w-auto sm:h-56 md:h-64 drop-shadow-xl" />
+
+      <p class="mt-2 text-lg text-white/90 max-w-2xl mx-auto">
+        Nowoczesny salon z przyjazną atmosferą. Profesjonalne strzyżenia, koloryzacje i pielęgnacja
+        dopasowana do Twoich włosów.
+      </p>
+
+      <div class="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="#oferta" class="rounded-lg bg-cyan-600 px-6 py-3 font-semibold text-white hover:bg-cyan-500 transition">Poznaj ofertę</a>
+        <a href="#galeria" class="rounded-lg border border-white/40 px-6 py-3 font-semibold text-white hover:bg-white/10 transition">Zobacz realizacje</a>
+      </div>
+    </div>
+
+    <a href="#onas" class="absolute bottom-6 inline-flex items-center gap-2 text-white/80 hover:text-white">
+      <span>Przewiń w dół</span>
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+      </svg>
+    </a>
+  </section>
+
+  <!-- O NAS -->
+  <section id="onas" class="px-6 py-20">
+    <div class="mx-auto max-w-5xl">
+      <h2 class="text-3xl font-bold">O nas</h2>
+      <div class="mt-6 grid gap-8 md:grid-cols-3">
+        <div class="md:col-span-2 space-y-4 text-slate-600">
+          <p>
+            Jesteśmy <strong>zespołem pasjonatów</strong> – cenimy dobrą atmosferę i indywidualne podejście. Nasi styliści
+            regularnie szkolą się, aby oferować najnowsze techniki i trendy.
+          </p>
+          <p>
+            Słuchamy, doradzamy i dopasowujemy <strong>fryzurę oraz kolor</strong> do rysów twarzy i typu włosa. Pracujemy na
+            sprawdzonych kosmetykach renomowanych marek.
+          </p>
+          <p>
+            Dbamy o każdy szczegół – od konsultacji, przez strzyżenie i stylizację, po rekomendacje pielęgnacji domowej.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OFERTA -->
+  <section id="oferta" class="relative px-6 py-24 bg-gradient-to-b from-slate-50 to-white border-y border-slate-200/70">
+    <div class="mx-auto max-w-6xl">
+      <div class="text-center">
+        <p class="text-xs font-semibold tracking-widest text-cyan-700 uppercase">Nasze usługi</p>
+        <h2 class="mt-2 text-3xl md:text-4xl font-extrabold">Oferta</h2>
+        <p class="mt-3 text-slate-600 max-w-3xl mx-auto">
+          Kompleksowe usługi fryzjerskie – damskie, męskie i dziecięce. Wybierz kategorię i zobacz, co możemy dla Ciebie zrobić.
+        </p>
+      </div>
+
+      <!-- TOP: karty -->
+      <div class="mt-10 grid gap-6 lg:grid-cols-3">
+        <!-- Strzyżenia -->
+        <a href="#kontakt" class="group relative h-80 rounded-3xl overflow-hidden ring-1 ring-slate-200 shadow-sm hover:shadow-xl transition">
+          <div class="absolute inset-0 bg-center bg-cover" style="background-image:url('https://picsum.photos/800/600?random=1');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-slate-800 shadow">
+              ✂️ Strzyżenia
+            </span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h3 class="text-2xl font-bold drop-shadow">Klasyka i nowoczesność</h3>
+            <p class="mt-2 text-white/90">Damskie, męskie, dziecięce, modelowanie, fale, loki.</p>
+            <div class="mt-3 flex flex-wrap gap-2">
+              <span class="rounded-full bg-white/20 px-2.5 py-1 text-sm">upięcia okolicznościowe</span>
+              <span class="rounded-full bg-white/20 px-2.5 py-1 text-sm">stylizacje wieczorowe</span>
+            </div>
+          </div>
+          <div class="absolute inset-0 scale-100 group-hover:scale-[1.03] transition-transform"></div>
+        </a>
+
+        <!-- Koloryzacje -->
+        <a href="#kontakt" class="group relative h-80 rounded-3xl overflow-hidden ring-1 ring-slate-200 shadow-sm hover:shadow-xl transition">
+          <div class="absolute inset-0 bg-center bg-cover" style="background-image:url('https://picsum.photos/800/600?random=2');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-slate-800 shadow">
+              🎨 Koloryzacje
+            </span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h3 class="text-2xl font-bold drop-shadow">Blondy, pasemka, korekty</h3>
+            <p class="mt-2 text-white/90">Balayage, rozjaśnianie, ton w ton, ombre/sombre.</p>
+          </div>
+          <div class="absolute inset-0 scale-100 group-hover:scale-[1.03] transition-transform"></div>
+        </a>
+
+        <!-- Stylizacja & pielęgnacja -->
+        <a href="#kontakt" class="group relative h-80 rounded-3xl overflow-hidden ring-1 ring-slate-200 shadow-sm hover:shadow-xl transition">
+          <div class="absolute inset-0 bg-center bg-cover" style="background-image:url('https://picsum.photos/800/600?random=3');"></div>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+          <div class="absolute top-4 left-4">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-sm font-semibold text-slate-800 shadow">
+              💆‍♀️ Stylizacja & pielęgnacja
+            </span>
+          </div>
+          <div class="absolute bottom-4 left-4 right-4 text-white">
+            <h3 class="text-2xl font-bold drop-shadow">Zdrowe, lśniące włosy</h3>
+            <p class="mt-2 text-white/90">Regeneracja, keratyna, stylizacja męska i pielęgnacja brody.</p>
+          </div>
+          <div class="absolute inset-0 scale-100 group-hover:scale-[1.03] transition-transform"></div>
+        </a>
+      </div>
+
+      <!-- BOTTOM: mniejsze kafle + marki -->
+      <div class="mt-10 grid gap-6 md:grid-cols-3">
+        <article class="reveal rounded-2xl border border-slate-200 bg-white p-6 shadow-sm opacity-0 translate-y-4 transition duration-700">
+          <h3 class="font-semibold text-xl">Dodatkowo</h3>
+          <ul class="mt-3 space-y-1 text-slate-600">
+            <li>• Henna brwi i rzęs, regulacja brwi</li>
+            <li>• Pielęgnacja dłoni i paznokci</li>
+            <li>• Konsultacje pielęgnacyjne</li>
+          </ul>
+        </article>
+
+        <article class="reveal rounded-2xl border border-slate-200 bg-white p-6 shadow-sm opacity-0 translate-y-4 transition duration-700">
+          <h3 class="font-semibold text-xl">Marki</h3>
+          <div class="mt-3 flex flex-wrap gap-2">
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Marka A</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Marka B</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Marka C</span>
+            <span class="rounded-full bg-slate-100 px-3 py-1 text-sm">Marka D</span>
+          </div>
+          <p class="mt-3 text-sm text-slate-500">Pracujemy wyłącznie na sprawdzonych produktach.</p>
+        </article>
+
+        <article class="reveal rounded-2xl border border-slate-200 bg-white p-6 shadow-sm opacity-0 translate-y-4 transition duration-700">
+          <h3 class="font-semibold text-xl">Konsultacje</h3>
+          <p class="mt-3 text-slate-600">
+            Każdą usługę poprzedzamy rozmową – dobierzemy fryzurę, kolor oraz pielęgnację do kształtu twarzy i kondycji włosów.
+          </p>
+          <a href="#kontakt" class="mt-4 inline-block rounded-lg bg-cyan-600 px-4 py-2 font-semibold text-white hover:bg-cyan-500 transition">Umów konsultację</a>
+        </article>
+      </div>
+
+      <div class="mt-10 rounded-2xl border border-cyan-200 bg-cyan-50 p-6 text-cyan-900 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p class="text-center md:text-left">
+          Nie wiesz co wybrać? Doradzimy i dobierzemy usługę do Twoich włosów.
+        </p>
+        <a href="#kontakt" class="rounded-lg bg-cyan-600 px-5 py-2 font-semibold text-white hover:bg-cyan-500 transition">Skontaktuj się z nami</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="px-6 py-20">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold">Galeria fryzur</h2>
+      <p class="mt-2 text-slate-600">Wybrane realizacje (przykładowe zdjęcia).</p>
+      <div class="mt-8 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <img src="https://picsum.photos/800/600?random=11" alt="" class="aspect-[4/3] w-full rounded-xl object-cover border border-slate-200 bg-slate-100" loading="lazy" />
+        <img src="https://picsum.photos/800/600?random=12" alt="" class="aspect-[4/3] w-full rounded-xl object-cover border border-slate-200 bg-slate-100" loading="lazy" />
+        <img src="https://picsum.photos/800/600?random=13" alt="" class="aspect-[4/3] w-full rounded-xl object-cover border border-slate-200 bg-slate-100" loading="lazy" />
+        <img src="https://picsum.photos/800/600?random=14" alt="" class="aspect-[4/3] w-full rounded-xl object-cover border border-slate-200 bg-slate-100" loading="lazy" />
+        <img src="https://picsum.photos/800/600?random=15" alt="" class="aspect-[4/3] w-full rounded-xl object-cover border border-slate-200 bg-slate-100" loading="lazy" />
+        <img src="https://picsum.photos/800/600?random=16" alt="" class="aspect-[4/3] w-full rounded-xl object-cover border border-slate-200 bg-slate-100" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CERTYFIKATY -->
+  <section id="certyfikaty" class="px-6 py-20">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold">Certyfikaty & dyplomy</h2>
+      <p class="mt-2 text-slate-600">Przykładowe grafiki – podmień na własne.</p>
+      <div class="mt-8 grid gap-6 grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+        <img src="https://placehold.co/400x550?text=Cert+1" alt="Dyplom 1" class="w-full rounded-lg border border-slate-200 bg-white object-cover aspect-[3/4]" loading="lazy">
+        <img src="https://placehold.co/400x550?text=Cert+2" alt="Dyplom 2" class="w-full rounded-lg border border-slate-200 bg-white object-cover aspect-[3/4]" loading="lazy">
+        <img src="https://placehold.co/400x550?text=Cert+3" alt="Dyplom 3" class="w-full rounded-lg border border-slate-200 bg-white object-cover aspect-[3/4]" loading="lazy">
+        <img src="https://placehold.co/400x550?text=Cert+4" alt="Dyplom 4" class="w-full rounded-lg border border-slate-200 bg-white object-cover aspect-[3/4]" loading="lazy">
+        <img src="https://placehold.co/400x550?text=Cert+5" alt="Dyplom 5" class="w-full rounded-lg border border-slate-200 bg-white object-cover aspect-[3/4]" loading="lazy">
+        <img src="https://placehold.co/400x550?text=Cert+6" alt="Dyplom 6" class="w-full rounded-lg border border-slate-200 bg-white object-cover aspect-[3/4]" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT (2 lokalizacje) -->
+  <section id="kontakt" class="px-6 py-20 bg-slate-50 border-y border-slate-200/70">
+    <div class="mx-auto max-w-6xl">
+      <h2 class="text-3xl font-bold">Kontakt</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <!-- Lokalizacja 1 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-xl font-semibold">Salon – Centrum</h3>
+          <p class="mt-2 text-slate-600">
+            ul. Przykładowa 1
+          </p>
+          <p class="mt-2 text-sm text-slate-500">Pon–Pt 9:00–18:00 · Sob 9:00–14:00</p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a href="tel:+48000000000" class="rounded-lg bg-cyan-600 px-4 py-2 font-semibold text-white hover:bg-cyan-500 transition">+48 000 000 000</a>
+            <a href="mailto:kontakt@twoj-salon.pl" class="rounded-lg border border-slate-300 px-4 py-2 font-semibold hover:bg-slate-50 transition">kontakt@twoj-salon.pl</a>
+          </div>
+          <div class="mt-4 h-56 w-full overflow-hidden rounded-xl border border-slate-200">
+            <!-- Podmień zapytanie w URL na właściwy adres -->
+            <iframe title="Mapa – Lokalizacja 1" src="https://www.google.com/maps?q=Miasto%2C%20Przykladowa%201&output=embed" width="100%" height="100%" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <!-- Lokalizacja 2 -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-xl font-semibold">Salon – Dzielnica</h3>
+          <p class="mt-2 text-slate-600">ul. Testowa 2</p>
+          <p class="mt-2 text-sm text-slate-500">Pon–Pt 8:30–17:30 · Sob 8:30–14:00</p>
+          <div class="mt-4 flex flex-wrap gap-3">
+            <a href="tel:+48111111111" class="rounded-lg bg-cyan-600 px-4 py-2 font-semibold text-white hover:bg-cyan-500 transition">+48 111 111 111</a>
+            <a href="mailto:kontakt@twoj-salon.pl" class="rounded-lg border border-slate-300 px-4 py-2 font-semibold hover:bg-slate-50 transition">kontakt@twoj-salon.pl</a>
+          </div>
+          <div class="mt-4 h-56 w-full overflow-hidden rounded-xl border border-slate-200">
+            <iframe title="Mapa – Lokalizacja 2" src="https://www.google.com/maps?q=Miasto%2C%20Testowa%202&output=embed" width="100%" height="100%" style="border:0" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+      <p class="mt-10 text-xs text-slate-500">
+        * Powyżej podaj swoje aktualne adresy, godziny i numery telefonów.
+      </p>
+    </div>
+  </section>
+
+  <!-- STOPKA -->
+  <footer class="px-6 py-10 text-center text-sm text-slate-500">
+    © <span id="year"></span> [Nazwa Salonu]. Made by Pietech.
+  </footer>
+
+  <script src="js/main.js"></script>
+
+<!--
+   ✅ Jak używać szablonu (szybkie podmiany):
+   1) Tytuł i meta description w <head> – wstaw nazwę marki.
+   2) Logo: podmień linki placehold.co na /logo.png lub SVG.
+   3) Zdjęcia: podmień linki picsum/placehold na własne pliki (folder /img).
+   4) Sekcja Kontakt: ustaw realne adresy, telefony, e‑maile i mapy (parametr q w URL).
+   5) Marki: wpisz prawdziwe marki kosmetyczne lub usuń sekcję.
+   6) Teksty: zachowaj neutralny ton, dodaj swoje USP.
+-->
+</body>
+</html>
