@@ -16,7 +16,7 @@ This project is part of my portfolio and can be used as a starting point for sim
 
 ## 🚀 Live Demo
 Check the live version here:  
-👉 [View on GitHub Pages](https://pietechpl.github.io/hair-salon/)
+👉 [View on GitHub Pages](https://pietechpl.github.io/hairsalon/)
 
 ---
 
